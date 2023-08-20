@@ -1,12 +1,7 @@
-<script setup>
-  import Header from './components/Header.vue';
-  import Content from './components/Content.vue';
-</script>
+<script setup></script>
 
 <template>
-  <Header></Header>
-  <Content></Content>
+  <router-view />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

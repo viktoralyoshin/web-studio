@@ -1,41 +1,51 @@
 <template>
-  <div class="flex flex-col items-center bg-black">
+  <div id="services" class="flex flex-col items-center bg-black">
     <h1 class="text-white my-8 font-semibold text-[34px]">Услуги</h1>
-    <div class="flex max-w-[1200px] mx-auto justify-center gap-12 flex-wrap my-10">
-      <div class="flex flex-col text-white hover:scale-105 duration-200 ease-in">
+    <div
+      class="flex max-w-[1200px] mx-auto justify-center gap-12 flex-wrap my-10"
+    >
+      <div
+        class="flex flex-col text-white gap-2 bg-[#0a0a0a] hover:border-[#22c55e] hover:shadow-inner hover:shadow-[#22c566bd] duration-200 ease-in border-[1px] border-[#333333] rounded-xl p-4"
+      >
         <img
           class="w-[250px] h-[250px] rounded-lg"
-          src="../../../public/service.jpg"
+          src="../../../public/service.png"
           alt=""
         />
-        <div class="opacity-70">
-          <h1 class="text-[24px]">Лендинг</h1>
-          <p>5000₽</p>
+        <div>
+          <h1 class="text-[20px]">Лендинг</h1>
+          <p class="opacity-70">5&nbsp;000&nbsp;₽</p>
         </div>
       </div>
-      <div class="flex flex-col text-white hover:scale-105 duration-200 ease-in">
+      <div
+        class="flex flex-col text-white gap-2 bg-[#0a0a0a] hover:border-[#22c55e] hover:shadow-inner hover:shadow-[#22c566bd] duration-200 ease-in border-[1px] border-[#333333] rounded-xl p-4"
+      >
         <img
           class="w-[250px] h-[250px] rounded-lg"
-          src="../../../public/service.jpg"
+          src="../../../public/service.png"
           alt=""
         />
-        <div class="opacity-70">
-          <h1 class="text-[24px]">Вёрстка</h1>
-          <p>5000₽</p>
+        <div>
+          <h1 class="text-[20px]">Вёрстка</h1>
+          <p class="opacity-70">5&nbsp;000&nbsp;₽</p>
         </div>
       </div>
-      <div class="flex flex-col text-white hover:scale-105 duration-200 ease-in">
+      <div
+        class="flex flex-col text-white gap-2 bg-[#0a0a0a] hover:border-[#22c55e] hover:shadow-inner hover:shadow-[#22c566bd] duration-200 ease-in border-[1px] border-[#333333] rounded-xl p-4"
+      >
         <img
           class="w-[250px] h-[250px] rounded-lg"
-          src="../../../public/service.jpg"
+          src="../../../public/service.png"
           alt=""
         />
-        <div class="opacity-70">
-          <h1 class="text-[24px]">Front-end Разработка</h1>
-          <p>5000₽</p>
+        <div>
+          <h1 class="text-[20px]">Front-end Разработка</h1>
+          <p class="opacity-70">5&nbsp;000&nbsp;₽</p>
         </div>
       </div>
     </div>
   </div>
+  <div class="h-[1px] w-full bg-[#333333]"></div>
 </template>
-<script setup></script>
+<script setup>
+</script>
