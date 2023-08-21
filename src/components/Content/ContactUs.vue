@@ -1,13 +1,68 @@
 <template>
   <div class="bg-black">
-    <div class="flex max-w-[1200px] mx-auto py-10 justify-between items-center">
-      <div class="w-1/2 text-white text-[24px] flex flex-col gap-6">
-        <p class="text-[32px]">Остались вопросы?</p>
-        <p class="text-[#8b8b8b] text-[20px]">
+    <div class="flex md:flex-row flex-col max-w-[1200px] min-[1200px]:mx-auto mx-4 md:py-10 py-6 justify-between items-center gap-4 md:gap-0 overflow-hidden">
+      <div class="md:w-1/2 w-[full] text-white text-[24px] flex flex-col md:gap-6 text-center md:text-left gap-2 md:mx-0 mb-6 md:mb-0">
+        <p
+        v-motion
+            :initial="{ opacity: 0, x: -200 }"
+            :visibleOnce="{
+              opacity: 100,
+              x: 0,
+              transition: {
+                x: {
+                  duration: 1000,
+                },
+                opacity: {
+                  delay: 400,
+                  duration: 5000,
+                },
+              },
+            }"
+          class="md:text-[32px] text-[26px]"
+        >
+          Остались вопросы?
+        </p>
+        <p
+        v-motion
+            :initial="{ opacity: 0, x: -200 }"
+            :visibleOnce="{
+              opacity: 100,
+              x: 0,
+              transition: {
+                x: {
+                  delay:200,
+                  duration: 1000,
+                },
+                opacity: {
+                  delay: 700,
+                  duration: 5000,
+                },
+              },
+            }"
+          class="text-[#8b8b8b] text-[20px]"
+        >
           Заполните форму и мы обязательно с вами свяжемся.
         </p>
       </div>
-      <div class="border-[#333333] rounded-xl p-4 border-[1px]">
+      <div
+      v-motion
+            :initial="{ opacity: 0, x: 200 }"
+            :visibleOnce="{
+              opacity: 100,
+              x: 0,
+              transition: {
+                x: {
+                  delay:400,
+                  duration: 1000,
+                },
+                opacity: {
+                  delay: 900,
+                  duration: 5000,
+                },
+              },
+            }"
+        class="border-[#333333] rounded-xl p-4 border-[1px]"
+      >
         <h1 class="text-white font-medium text-[24px] mb-4">
           Связаться с нами
         </h1>
