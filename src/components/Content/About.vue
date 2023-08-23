@@ -17,10 +17,10 @@
       О нас
     </h1>
     <div
-      class="flex flex-col max-w-[1200px] mx-auto my-10 gap-8 text-white text-[24px]"
+      class="flex flex-col xl:max-w-[1200px] xl:mx-auto my-10 gap-8 text-white text-[24px] mx-3"
     >
       <div class="flex md:flex-row flex-col gap-8 items-center">
-        <div class="flex flex-col gap-2 md:text-left text-center md:mx-0 mx-3">
+        <div class="flex flex-col gap-2 md:text-left text-center">
           <p
             v-motion
             :initial="{ opacity: 0, x: -200 }"
@@ -64,6 +64,17 @@
           </p>
         </div>
         <img
+          v-motion
+          :initial="{ opacity: 0 }"
+          :visibleOnce="{
+            opacity: 100,
+            transition: {
+              opacity: {
+                delay: 400,
+                duration: 5000,
+              },
+            },
+          }"
           class="rounded-xl md:w-1/2 w-[80%]"
           src="../../../public/about.jpg"
           alt="about"
@@ -72,11 +83,22 @@
       <div class="h-[1px] w-full bg-[#333333]"></div>
       <div class="flex md:flex-row flex-col gap-8 items-center">
         <img
+          v-motion
+          :initial="{ opacity: 0 }"
+          :visibleOnce="{
+            opacity: 100,
+            transition: {
+              opacity: {
+                delay: 400,
+                duration: 5000,
+              },
+            },
+          }"
           class="rounded-xl w-1/2 md:flex hidden"
           src="../../../public/about2.jpg"
           alt="about"
         />
-        <div class="flex flex-col gap-2 md:text-left text-center md:mx-0 mx-3">
+        <div class="flex flex-col gap-2 md:text-left text-center">
           <p
             v-motion
             :initial="{ opacity: 0, x: 200 }"
@@ -121,6 +143,17 @@
           </p>
         </div>
         <img
+          v-motion
+          :initial="{ opacity: 0 }"
+          :visibleOnce="{
+            opacity: 100,
+            transition: {
+              opacity: {
+                delay: 400,
+                duration: 5000,
+              },
+            },
+          }"
           class="rounded-xl w-[80%] flex md:hidden"
           src="../../../public/about2.jpg"
           alt="about"
@@ -130,7 +163,7 @@
       <div class="flex md:flex-row flex-col gap-8 items-center">
         <div class="flex flex-col gap-10 md:items-start items-center">
           <div
-            class="flex flex-col gap-2 md:text-left text-center md:mx-0 mx-3"
+            class="flex flex-col gap-2 md:text-left text-center"
           >
             <p
               v-motion
@@ -207,6 +240,17 @@
           </div>
         </div>
         <img
+          v-motion
+          :initial="{ opacity: 0 }"
+          :visibleOnce="{
+            opacity: 100,
+            transition: {
+              opacity: {
+                delay: 400,
+                duration: 5000,
+              },
+            },
+          }"
           class="object-cover rounded-xl md:w-1/4 w-[70%] overflow-hidden"
           src="../../../public/about3.png"
           alt="about"

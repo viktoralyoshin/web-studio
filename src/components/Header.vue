@@ -8,7 +8,7 @@
         <h1>Разработаем сайт, который привлечёт, удержит и превратит посетителей в клиентов!</h1>
       </div>
     </div>
-    <img class="object-cover lg:flex hidden lg:overflow-visible overflow-hidden" src="../../public/img.svg" alt="">
+    <img class="object-cover xl:flex hidden 2xl:overflow-visible overflow-hidden" src="../../public/img.svg" alt="">
   </div>
 </template>
 <script setup>

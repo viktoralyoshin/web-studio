@@ -16,7 +16,7 @@
       Наши работы
     </h1>
     <div
-      class="flex md:flex-row flex-col max-w-[1200px] mx-auto justify-center md:gap-16 gap-10 my-10 flex-wrap"
+      class="flex md:flex-row flex-col xl:max-w-[1200px] xl:mx-auto justify-center md:gap-16 gap-10 my-10 flex-wrap mx-3"
     >
       <div
         v-motion
